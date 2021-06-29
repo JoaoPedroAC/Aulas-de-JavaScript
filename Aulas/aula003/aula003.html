@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores aritimeticos</title>
+</head>
+
+<body>
+    <script>
+        // ARITIMÉTICOS (+ - * / **) 1º
+        /*
+        Ordem de Precedencia
+         1º ()    -> qm estiver dentro
+         2º ** 
+         3º * / % -> qm aparecer primeiro
+         4º + -   -> qm aparecer primeiro
+         */
+
+        //ATRIBUIÇÃO 2º
+        // n += 4 - > só serve caso a variavel 'n' esteja somando ela mesma + algum numero, no caso do exmplo dado '4';    pode ser tbm para qualquer um desses operadores acima(n *= 5, n %= 9, etc)
+        /*
+        INCREMENTO
+        X = X + 1 OU X += 1 pode ser lido como X++(pos) ++X(pre)
+        DECREMENTO
+        X = X - 1 OU X -= 1 pode ser lido como X--(pos) --X(pre)
+        */
+
+        // RELACIONAIS 3º
+        /*
+        sempre retornará True ou False
+        Sua ordem de precedencia é o 1º que aparecer, sempre da esq para direit
+         >
+         <
+         >=
+         <=
+         == (igualdade)
+         === (igualdade restrita)
+         != (diferente)
+         !== (desigual restrito)
+         */
+        var n1 = Number(4)
+        var n2 = '4'
+        var rela = n1 == n2
+        document.writeln(rela)
+        document.writeln('<br>')
+            // LÓGICOS 4º
+            /*
+            Sua ordem de precedencia é:
+            1º !  (negação ou not)
+            2º && (conjunção ou and)
+            3º || (disjunção ou or)
+            */
+        var a = Number(5)
+        var b = Number(8)
+        document.write(a >= b || b / 2 == 4)
+        document.writeln('<br>')
+            // TRNÁRIOS (ultimo da ordem)
+            /*
+            Seu nome é devido ele juntar 3 operandos(teste ?teste : teste)
+            ?
+            :
+            */
+        var média = 6.0
+        média += 2
+        document.writeln(média > 7 ? 'Aprovado' : 'Reprovado')
+            //Existe mais mas não será aprofundado no 'curso em video'
+    </script>
+</body>
+
+</html>

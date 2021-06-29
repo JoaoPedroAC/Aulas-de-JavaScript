@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º passos com o DOM</title>
+    <style>
+        body {
+            background-color: purple;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h">Iniciando os estudos com DOM</h2>
+    <p name="p">D.O.M == 'Document Object Model</p>
+    <p>Vamo começar</p>
+    <div id="msg">Clique em mim</div>
+    <canvas></canvas>
+    <script>
+        // Arvore DOM
+        /*
+                window (janela)
+        location document history
+
+        location = seria a URL, local de acesso, etc
+            document = seria o documento atual
+                HTML
+             head body
+
+        history = historico de navegação do seu site
+        */
+
+        //Selecionando:
+        /*
+
+        por Seletor - querySelector() ou querySelectorAll()
+        mais recomendado ^^^^^^^^^^
+        # navegadores antigos não suportam
+        ****************************************************
+        por ID - getElementById()
+        
+        por Nome - getElementsByName()[]
+
+        por classe - getElementsByClassName()[]
+        
+        por Marca - getElementsByTagName()[]
+      
+         */
+        var corpo = window.document.body
+        corpo.style.background = 'darkgreen'
+
+        var d2 = window.document.querySelector('div#msg')
+        d2.style.background = 'red'
+
+        var d = window.document.getElementById('msg')
+        d.style.color = 'yellow'
+        d.innerText = 'Colé'
+
+        var p2 = document.getElementsByName('p')[0]
+        p2.style.background = 'blue'
+
+        var c = window.document.getElementsByClassName('h')[0]
+        c.style.color = "white"
+
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'yellow'
+        p1.innerText = 'Clica logo'
+
+        var cor = document.getElementsByTagName('canvas')[0]
+        cor.drawBox('white')
+    </script>
+</body>
+
+</html>

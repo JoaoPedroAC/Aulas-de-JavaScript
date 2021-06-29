@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3º exercicio</title>
+
+</head>
+
+<body>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Escreva um numero:'))
+        var n2 = parseInt(window.prompt('Escreva outro numero:'))
+        var n3 = Number(prompt('Escreva mais um numero: '))
+        var n4 = String(prompt('Escreva mais outro numero: '))
+        var soma = n1 + n2 + n3 + n4
+        alert(`A soma deu ${soma.toString()}`)
+        alert(typeof soma)
+            //o .prompt sempre retorna string
+
+        //vamos usar o Number.parseInt(n) para numero inteiro
+
+        //parseFloat(n) para numero flutuante
+
+        // nao precisa do Number
+
+        // dá para usar só number tbm, q o sistema se vira, porem pode ou nao ocorrer tretas
+
+        //podemosusar para converter de number p/ string, usando n.toString ou String(n)
+
+        // para usar uma formatação utiliza-se`${}` - é chamado de template string ou template holder
+        var nome = 'Java Scripita'
+        nome.length // vai retornar quantas strings tem a variavel
+        nome.toUpperCase // vai dxar tudo maisculo
+        nome.toLowerCase // vai dxar tudo minusculo
+    </script>
+
+</body>
+
+</html>
